@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "inputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "samples-workitems/{name}_ds.csv",
+      "connection": "fftestblob_STORAGE"
+    },
+    {
+      "type": "serviceBus",
+      "name": "queueMsg",
+      "queueName": "mlqueue",
+      "connection": "mlqueue",
+      "accessRights_": "Send",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

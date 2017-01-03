@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "name": "jobMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "mlqueue",
+      "connection": "managemlqueue",
+      "accessRights": "Manage"
+    },
+    {
+      "name": "queueMsg",
+      "type": "serviceBus",
+      "direction": "out",
+      "queueName": "mlqueue",
+      "connection": "managemlqueue",
+      "accessRights": "Manage"
+    }
+  ],
+  "disabled": false
+}

@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "inputBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "samples-workitems/{name}_raw.csv",
+      "connection": "fftestblob_STORAGE"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "samples-workitems/{name}_ds.csv",
+      "connection": "fftestblob_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
