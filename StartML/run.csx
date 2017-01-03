@@ -1,6 +1,7 @@
 #r "Microsoft.WindowsAzure.Storage"
 #r "Newtonsoft.Json"
 #load "..\Shared\MLDTO.csx"
+using System.Configuration;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.ServiceBus.Messaging;
